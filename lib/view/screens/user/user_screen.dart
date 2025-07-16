@@ -19,7 +19,7 @@ class UserScreen extends StatelessWidget {
         title: Row(
           children: [
             const CircleAvatar(
-              backgroundImage: AssetImage('assets/images/img.png'), // Replace with your image
+              backgroundImage: AssetImage('assets/images/img.png'),
               radius: 20,
             ),
             const SizedBox(width: 8),

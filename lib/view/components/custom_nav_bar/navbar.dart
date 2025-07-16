@@ -28,23 +28,23 @@ class _UserNavBarState extends State<NavBar> {
   final List<String> navbarNameList = [
     "home",
     "message",
-    "schedule",
-    "favorites",
+    "break",
+    "notes",
     "profile",
   ];
   final List<String> selectedIcon = [
     AppImages.home,
     AppImages.home,
-    AppImages.home,
-    AppImages.home,
-    AppImages.home,
+    AppImages.bin,
+    AppImages.notes,
+    AppImages.profile1,
   ];
   final List<String> unselectedIcon = [
     AppImages.home,
     AppImages.home,
-    AppImages.home,
-    AppImages.home,
-    AppImages.home,
+    AppImages.bin,
+    AppImages.notes,
+    AppImages.profile1,
   ];
 
   @override

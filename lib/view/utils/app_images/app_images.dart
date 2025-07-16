@@ -25,6 +25,9 @@ class AppImages {
   static const String pdf = "$basePath/pdf.png";
   static const String download = "$basePath/download.png";
   static const String card = "$basePath/card.png";
+  static const String bin = "$basePath/bin.svg";
+  static const String notes = "$basePath/notes.svg";
+  static const String profile1 = "$basePath/profile.svg";
 
 
 
