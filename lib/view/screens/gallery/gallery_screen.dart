@@ -11,7 +11,7 @@ class GalleryScreen extends StatelessWidget {
     return Scaffold(
       appBar: CustomRoyelAppbar(titleName: 'Gallery'),
       body: GridView.builder(
-        itemCount: 6,
+        itemCount: 20,
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
           childAspectRatio: 1,

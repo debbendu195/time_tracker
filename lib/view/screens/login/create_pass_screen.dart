@@ -29,67 +29,65 @@ class CreatePassScreen extends StatelessWidget {
               height: 181,
             ),
           ),
-          Expanded(
-            child: Container(
-              height: 100,
-              width: 500,
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(30),
-                  color: AppColors.white,
-                  boxShadow: [
-                    BoxShadow(
-                        color: AppColors.black_02,
-                        blurRadius: 10,
-                        spreadRadius: 2,
-                        offset: Offset(2, 10)
-                    )
-                  ]
-              ),
-              child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 20),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  mainAxisAlignment: MainAxisAlignment.start,
+        ],
+      ),
+      bottomNavigationBar: Expanded(
+        child: Container(
+          height: MediaQuery.sizeOf(context).height/2,
+          decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(30),
+              color: AppColors.white,
+              boxShadow: [
+                BoxShadow(
+                    color: AppColors.black_02,
+                    blurRadius: 10,
+                    spreadRadius: 2,
+                    offset: Offset(2, 10)
+                )
+              ]
+          ),
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 20),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                SizedBox(height: 50,),
+                Column(
                   children: [
-                    SizedBox(height: 50,),
-                    Column(
-                      children: [
-                        CustomText(
-                          text: 'We’ve sent a verification link to your email address. Please check your inbox and click on the link to confirm your account and get started with alpha track ',
-                          fontWeight: FontWeight.w400,
-                          fontSize: 12,
-                          maxLines: 3,
-                          bottom: 40,
-                        ),
-                        CustomFormCard(
-                            title: 'New Password',
-                            controller: TextEditingController()
-                        ),
-                        CustomFormCard(
-                            title: 'Confirm New Password',
-                            controller: TextEditingController()
-                        ),
-                        SizedBox(height: 50,),
-                        CustomButton(
-                          onTap: (){
-                            Get.toNamed(AppRoutes.signupScreen);
-                          },
-                          title: 'Confirm',
-                          fillColor: AppColors.blue,
-                          borderRadius: 30,
-                        ),
-                      ],
+                    CustomText(
+                      text: 'We’ve sent a verification link to your email address. Please check your inbox and click on the link to confirm your account and get started with alpha track ',
+                      fontWeight: FontWeight.w400,
+                      fontSize: 12,
+                      maxLines: 3,
+                      bottom: 40,
+                    ),
+                    CustomFormCard(
+                        title: 'New Password',
+                        controller: TextEditingController()
+                    ),
+                    CustomFormCard(
+                        title: 'Confirm New Password',
+                        controller: TextEditingController()
+                    ),
+                    CustomButton(
+                      onTap: (){
+                        Get.toNamed(AppRoutes.signupScreen);
+                      },
+                      title: 'Confirm',
+                      fillColor: AppColors.blue,
+                      borderRadius: 30,
                     ),
                   ],
                 ),
-              ),
-              // child:
-              //   Text(
-              //     'Forgot Your Password?'
-              //   ),
+              ],
             ),
           ),
-        ],
+          // child:
+          //   Text(
+          //     'Forgot Your Password?'
+          //   ),
+        ),
       ),
     );
   }

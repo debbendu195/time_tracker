@@ -27,62 +27,60 @@ class ForgatePassword extends StatelessWidget {
               width: 342,
             ),
           ),
-          SizedBox(height: 30,),
-          Container(
-            height: 510,
-            width: 500,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(30),
-              color: AppColors.white,
-              boxShadow: [
-                BoxShadow(
+        ],
+      ),
+      bottomNavigationBar: Container(
+        height: MediaQuery.sizeOf(context).height/2.5,
+        decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(30),
+            color: AppColors.white,
+            boxShadow: [
+              BoxShadow(
                   color: AppColors.black_02,
                   blurRadius: 10,
                   spreadRadius: 2,
                   offset: Offset(2, 10)
-                )
-              ]
-            ),
-            child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20),
-              child: Column(
+              )
+            ]
+        ),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 20),
+          child: Column(
+            children: [
+              CustomText(
+                top: 50,
+                text: 'Forgot Your Password?',
+                fontWeight: FontWeight.w500,
+                fontSize: 16,
+              ),
+              Column(
                 children: [
                   CustomText(
-                    top: 30,
-                      text: 'Forgot Your Password?',
-                    fontWeight: FontWeight.w500,
-                    fontSize: 16,
+                    text: 'No worries enter your email address, and we’ll sent you a code reset your password ',
+                    fontWeight: FontWeight.w400,
+                    fontSize: 12,
+                    maxLines: 3,
+                    bottom: 20,
                   ),
-                  Column(
-                    children: [
-                      CustomText(
-                        text: 'No worries enter your email address, and we’ll sent you a code reset your password ',
-                        fontWeight: FontWeight.w400,
-                        fontSize: 12,
-                        maxLines: 3,
-                        bottom: 20,
-                        ),
-                      CustomFormCard(title: 'Email', controller: TextEditingController()),
-                      SizedBox(height: 70,),
-                      CustomButton(
-                        onTap: (){
-                          Get.toNamed(AppRoutes.otpScreen);
-                        },
-                        title: 'Send OTP Code',
-                        fillColor: AppColors.blue,
-                        borderRadius: 30,
-                      ),
-                    ],
+                  CustomFormCard(title: 'Email', controller: TextEditingController()),
+                  SizedBox(height: 10,),
+                  CustomButton(
+                    onTap: (){
+                      Get.toNamed(AppRoutes.otpScreen);
+                    },
+                    title: 'Send OTP Code',
+                    fillColor: AppColors.blue,
+                    borderRadius: 30,
                   ),
                 ],
               ),
-            ),
-            // child:
-            //   Text(
-            //     'Forgot Your Password?'
-            //   ),
+            ],
           ),
-        ],
+        ),
+        // child:
+        //   Text(
+        //     'Forgot Your Password?'
+        //   ),
       ),
     );
   }

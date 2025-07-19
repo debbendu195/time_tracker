@@ -53,50 +53,60 @@ class OnbordingscreenOne extends StatelessWidget {
                 Container(
                   height: 10,
                   width: 20,
-                  color: AppColors.blue,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(30),
+                    color: AppColors.blue,
+                  ),
                 ),
                 SizedBox(width: 10,),
                 Container(
                   height: 10,
                   width: 10,
-                  color: AppColors.blue,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(30),
+                    color: AppColors.blue,
+                  ),
                 ),
                 SizedBox(width: 10,),
                 Container(
                   height: 10,
                   width: 10,
-                  color: AppColors.blue,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(30),
+                    color: AppColors.blue,
+                  ),
                 ),
               ],
             ),
-            SizedBox(height: 10,),
-            Row(
-              children: [
-
-                Flexible(
-                  child: CustomButton(onTap: (){
-                    Navigator.pop(context);
-                  },
-                    title: "Back",
-                    borderRadius: 30,
-                    fillColor: AppColors.white,
-                    textColor: AppColors.blue,
-                    isBorder: true,
-                    borderWidth: 2,
-                  ),
-                ),
-                SizedBox(width: 16,),
-                Flexible(
-                  child: CustomButton(onTap: (){
-                    Get.toNamed(AppRoutes.onbordingscreenTwo);
-                  },
-                    title: "Next",
-                    borderRadius: 30,
-                    fillColor: AppColors.blue,
-                  ),
-                ),
-              ],
-            )
+          ],
+        ),
+      ),
+      bottomNavigationBar: Padding(
+        padding: const EdgeInsets.only(left: 20, right: 20, bottom: 70),
+        child: Row(
+          children: [
+            Flexible(
+              child: CustomButton(onTap: (){
+                Navigator.pop(context);
+              },
+                title: "Back",
+                borderRadius: 30,
+                fillColor: AppColors.white,
+                textColor: AppColors.blue,
+                isBorder: true,
+                borderWidth: 2,
+              ),
+            ),
+            SizedBox(width: 16,),
+            Flexible(
+              child: CustomButton(onTap: (){
+                Get.toNamed(AppRoutes.onbordingscreenTwo);
+              },
+                title: "Next",
+                borderRadius: 30,
+                fillColor: AppColors.blue,
+              ),
+            ),
           ],
         ),
       ),

@@ -22,7 +22,7 @@ class HomeScreen extends StatelessWidget {
             Center(child: CustomImage(imageSrc: AppImages.mainLogo)),
             CustomText(
               top: 50,
-              text: "welcome to alpha track ",
+              text: "Welcome To Alpha Track ",
               fontSize: 24,
               fontWeight: FontWeight.w500,
               color: AppColors.black,
@@ -37,15 +37,20 @@ class HomeScreen extends StatelessWidget {
               maxLines: 5,
               bottom: 20,
             ),
-            CustomButton(
-              onTap: () {
-                Get.toNamed(AppRoutes.onbordingscreenOne);
-              },
-              title: "Get started",
-              fillColor: AppColors.blue,
-              borderRadius: 30,
-            ),
           ],
+        ),
+      ),
+      bottomNavigationBar: Padding(
+        padding: const EdgeInsets.only(left: 20, right: 20, bottom: 70),
+        child: CustomButton(
+          onTap: () {
+            Get.toNamed(AppRoutes.onbordingscreenOne);
+          },
+          title: "Get started",
+          // height: MediaQuery.sizeOf(context).height/10,
+          // width: MediaQuery.sizeOf(context).height/3,
+          fillColor: AppColors.blue,
+          borderRadius: 30,
         ),
       ),
     );

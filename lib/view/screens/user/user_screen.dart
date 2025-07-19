@@ -2,10 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:time/core/app_routes/app_routes.dart';
 import 'package:time/view/components/custom_button/custom_button.dart';
-import 'package:time/view/components/custom_image/custom_image.dart';
 import 'package:time/view/components/custom_text/custom_text.dart';
 import 'package:time/view/utils/app_colors/app_colors.dart';
-import 'package:time/view/utils/app_images/app_images.dart';
 
 import '../../components/custom_nav_bar/navbar.dart';
 
@@ -133,7 +131,10 @@ class UserScreen extends StatelessWidget {
               child: Container(
                 height: 70,
                 width: double.infinity,
-                color: AppColors.green,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  color: AppColors.green
+                ),
                 child: Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 20,vertical: 12),
                   child: Column(
@@ -161,7 +162,9 @@ class UserScreen extends StatelessWidget {
               child: Container(
                 height: 70,
                 width: double.infinity,
-                color: AppColors.grey_02,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                ),
                 child: Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 20,vertical: 12),
                   child: Column(
@@ -189,7 +192,9 @@ class UserScreen extends StatelessWidget {
               child: Container(
                 height: 70,
                 width: double.infinity,
-                color: AppColors.grey_02,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                ),
                 child: Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 20,vertical: 12),
                   child: Column(
@@ -217,7 +222,9 @@ class UserScreen extends StatelessWidget {
               child: Container(
                 height: 70,
                 width: double.infinity,
-                color: AppColors.grey_02,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                ),
                 child: Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 20,vertical: 12),
                   child: Column(

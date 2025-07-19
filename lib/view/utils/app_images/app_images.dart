@@ -28,6 +28,7 @@ class AppImages {
   static const String bin = "$basePath/bin.svg";
   static const String notes = "$basePath/notes.svg";
   static const String profile1 = "$basePath/profile.svg";
+  static const String profile2 = "$basePath/profilesvg.svg";
 
 
 

@@ -43,6 +43,7 @@ class UserCreate extends StatelessWidget {
               bottom: 20,
               maxLines: 2,
             ),
+            SizedBox(height: 30,),
             CustomButton(
               onTap: (){
                 Get.toNamed(AppRoutes.login);
@@ -51,7 +52,7 @@ class UserCreate extends StatelessWidget {
               borderRadius: 30,
               fillColor: AppColors.blue,
             ),
-            SizedBox(height: 10,),
+            SizedBox(height: 20,),
             CustomButton(
               onTap: (){
                 Get.toNamed(AppRoutes.signupScreen);
@@ -63,6 +64,7 @@ class UserCreate extends StatelessWidget {
               isBorder: true,
               borderWidth: 2,
             ),
+            SizedBox(height: 30,),
             CustomText(
               top: 20,
                 text: 'Continue As a Guest',

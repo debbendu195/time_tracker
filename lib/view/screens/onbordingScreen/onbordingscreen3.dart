@@ -23,8 +23,8 @@ class OnbordingscreenThree extends StatelessWidget {
             Center(
               child: CustomImage(
                 imageSrc: AppImages.track,
-                width: 287,
-                height: 257,
+                width: 282,
+                height: 270,
               ),
             ),
             CustomText(
@@ -51,51 +51,62 @@ class OnbordingscreenThree extends StatelessWidget {
                 Container(
                   height: 10,
                   width: 10,
-                  color: AppColors.blue,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(30),
+                    color: AppColors.blue,
+                  ),
                 ),
                 SizedBox(width: 10),
                 Container(
                   height: 10,
                   width: 10,
-                  color: AppColors.blue,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(30),
+                    color: AppColors.blue,
+                  ),
                 ),
                 SizedBox(width: 10),
                 Container(
                   height: 10,
                   width: 20,
-                  color: AppColors.blue,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(30),
+                    color: AppColors.blue,
+                  ),
                 ),
               ],
             ),
-            SizedBox(height: 20,),
-            Row(
-              children: [
-                Flexible(
-                  child: CustomButton(
-                    onTap: (){
-                      Navigator.pop(context);
-                    },
-                    title: 'Back',
-                    borderRadius: 30,
-                    textColor: AppColors.blue,
-                    fillColor: AppColors.white,
-                    isBorder: true,
-                    borderWidth: 2,
-                  ),
-                ),
-                SizedBox(width: 16,),
-                Flexible(
-                  child: CustomButton(
-                    onTap: (){
-                      Get.toNamed(AppRoutes.userCreate);
-                    },
-                    title: 'Next',
-                    borderRadius: 30,
-                    fillColor: AppColors.blue,
-                  ),
-                ),
-              ],
-            )
+          ],
+        ),
+      ),
+      bottomNavigationBar: Padding(
+        padding: const EdgeInsets.only(left: 20, right: 20, bottom: 70),
+        child: Row(
+          children: [
+            Flexible(
+              child: CustomButton(
+                onTap: (){
+                  Navigator.pop(context);
+                },
+                title: 'Back',
+                borderRadius: 30,
+                textColor: AppColors.blue,
+                fillColor: AppColors.white,
+                isBorder: true,
+                borderWidth: 2,
+              ),
+            ),
+            SizedBox(width: 16,),
+            Flexible(
+              child: CustomButton(
+                onTap: (){
+                  Get.toNamed(AppRoutes.userCreate);
+                },
+                title: 'Next',
+                borderRadius: 30,
+                fillColor: AppColors.blue,
+              ),
+            ),
           ],
         ),
       ),

@@ -79,7 +79,6 @@ class PlayRoleScreen extends StatelessWidget {
         ),
         child: Row(
           children: [
-            // PDF Icon
             Row(
               children: [
                 CustomImage(imageSrc: AppImages.pdf),

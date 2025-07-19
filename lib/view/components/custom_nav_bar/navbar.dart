@@ -37,14 +37,14 @@ class _UserNavBarState extends State<NavBar> {
     AppImages.home,
     AppImages.bin,
     AppImages.notes,
-    AppImages.profile1,
+    AppImages.profile2,
   ];
   final List<String> unselectedIcon = [
     AppImages.home,
     AppImages.home,
     AppImages.bin,
     AppImages.notes,
-    AppImages.profile1,
+    AppImages.profile2,
   ];
 
   @override
