@@ -55,7 +55,7 @@ class OnbordingscreenTwo extends StatelessWidget {
                   width: 10,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(30),
-                    color: AppColors.blue,
+                    color: AppColors.grey_03,
                   ),
                 ),
                 SizedBox(width: 10,),
@@ -73,7 +73,7 @@ class OnbordingscreenTwo extends StatelessWidget {
                   width: 10,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(30),
-                    color: AppColors.blue,
+                    color: AppColors.grey_03,
                   ),
                 ),
               ],

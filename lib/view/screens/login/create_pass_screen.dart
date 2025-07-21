@@ -72,7 +72,7 @@ class CreatePassScreen extends StatelessWidget {
                     ),
                     CustomButton(
                       onTap: (){
-                        Get.toNamed(AppRoutes.signupScreen);
+                        Get.toNamed(AppRoutes.login);
                       },
                       title: 'Confirm',
                       fillColor: AppColors.blue,

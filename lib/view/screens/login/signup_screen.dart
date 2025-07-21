@@ -32,15 +32,15 @@ class SignupScreen extends StatelessWidget {
               text: 'Create your account to access time tracking, project management tools, and more!',
               maxLines: 2,
             ),
-            CustomFormCard(title: 'Name', controller: TextEditingController()),
-            CustomFormCard(title: 'Email', controller: TextEditingController()),
-            CustomFormCard(title: 'Contract Number', controller: TextEditingController()),
-            CustomFormCard(title: 'Designation', controller: TextEditingController()),
-            CustomFormCard(title: 'Password', controller: TextEditingController()),
-            CustomFormCard(title: 'Confirm Password', controller: TextEditingController()),
+            CustomFormCard(title: 'Name', controller: TextEditingController(), hintText: 'Enter your Name',),
+            CustomFormCard(title: 'Email', controller: TextEditingController(), hintText: 'Enter your Email',),
+            CustomFormCard(title: 'Contract Number', controller: TextEditingController(), hintText: 'Enter your Number',),
+            CustomFormCard(title: 'Designation', controller: TextEditingController(), hintText: 'Enter your Designation',),
+            CustomFormCard(title: 'Password', controller: TextEditingController(), hintText: 'Enter your Password',),
+            CustomFormCard(title: 'Confirm Password', controller: TextEditingController(), hintText: 'Enter your Confirm Password',),
             CustomButton(
               onTap: () {
-                Get.toNamed(AppRoutes.userScreen);
+                Get.toNamed(AppRoutes.forgatePassword);
               },
               title: 'Sign Up',
               fillColor: AppColors.blue,

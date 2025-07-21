@@ -24,8 +24,8 @@ class LoginScreen extends StatelessWidget {
               maxLines: 2,
             ),
             SizedBox(height: 30,),
-            CustomFormCard(title: "Email", controller: TextEditingController()),
-            CustomFormCard(title: "Password", controller: TextEditingController()),
+            CustomFormCard(title: "Email", controller: TextEditingController(), hintText: 'Enter your email',),
+            CustomFormCard(title: "Password", controller: TextEditingController(), hintText: 'Enter your password',),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -47,7 +47,7 @@ class LoginScreen extends StatelessWidget {
             SizedBox(height: 20,),
             CustomButton(
               onTap: () {
-                Get.toNamed(AppRoutes.forgatePassword);
+                Get.toNamed(AppRoutes.userScreen);
               },
               title: 'Log in',
               fillColor: AppColors.blue,

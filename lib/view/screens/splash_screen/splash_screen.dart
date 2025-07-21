@@ -30,8 +30,11 @@ class _SplashScreenState extends State<SplashScreen> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Center(
-            child: CustomImage(imageSrc: AppImages.logo)
+          Padding(
+            padding: const EdgeInsets.all(50.0),
+            child: Center(
+              child: CustomImage(imageSrc: AppImages.logo)
+            ),
           )
         ],
       ),

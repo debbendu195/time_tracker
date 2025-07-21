@@ -37,7 +37,7 @@ class OnbordingscreenOne extends StatelessWidget {
               bottom: 20,
             ),
             CustomText(
-              top: 20,
+              // top: 20,
               text:
               "It’s time to try out your new time tracker! Just tap the button to start tracking your work hours, and stop it when you’re done. You’ll be up and running in no time",
               fontSize: 12,
@@ -64,7 +64,7 @@ class OnbordingscreenOne extends StatelessWidget {
                   width: 10,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(30),
-                    color: AppColors.blue,
+                    color: AppColors.grey_03,
                   ),
                 ),
                 SizedBox(width: 10,),
@@ -73,7 +73,7 @@ class OnbordingscreenOne extends StatelessWidget {
                   width: 10,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(30),
-                    color: AppColors.blue,
+                    color: AppColors.grey_03,
                   ),
                 ),
               ],

@@ -100,23 +100,24 @@ class ProjectDetailsScreen extends StatelessWidget {
               children: [
                 Container(
                   height: 100,
-                  width: 199,
+                  width: 180,
                   decoration: BoxDecoration(
-                      color: AppColors.grey_02,
-                    borderRadius: BorderRadius.all(Radius.circular(20))
+                      color: AppColors.lightWhite,
+                    borderRadius: BorderRadius.all(Radius.circular(10))
                   ),
                   child: Column(
                     children: [
                       CustomText(
                         top: 10,
-                          right: 100,
-                          text: 'Today'
+                        right: 100,
+                        text: 'Today'
                       ),
                       CustomText(
                         top: 5,
                         right: 100,
                         text: '8h 30m',
-                        fontWeight: FontWeight.w500,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 16,
                       ),
                     ],
                   ),
@@ -124,10 +125,10 @@ class ProjectDetailsScreen extends StatelessWidget {
                 SizedBox(width: 10,),
                 Container(
                   height: 100,
-                  width: 199,
+                  width: 180,
                   decoration: BoxDecoration(
-                      color: AppColors.grey_02,
-                      borderRadius: BorderRadius.all(Radius.circular(20))
+                      color: AppColors.lightWhite,
+                      borderRadius: BorderRadius.all(Radius.circular(10))
                   ),
                   child: Column(
                     children: [
@@ -140,7 +141,8 @@ class ProjectDetailsScreen extends StatelessWidget {
                         top: 5,
                         right: 100,
                         text: '15h 30m',
-                        fontWeight: FontWeight.w500,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 16,
                       ),
                     ],
                   ),
@@ -152,8 +154,8 @@ class ProjectDetailsScreen extends StatelessWidget {
               height: 100,
               width: double.infinity,
               decoration: BoxDecoration(
-                  color: AppColors.grey_02,
-                  borderRadius: BorderRadius.all(Radius.circular(20))
+                  color: AppColors.lightWhite,
+                  borderRadius: BorderRadius.all(Radius.circular(10))
               ),
               child: Column(
                 children: [
@@ -166,7 +168,8 @@ class ProjectDetailsScreen extends StatelessWidget {
                     top: 5,
                     right: 300,
                     text: '15h 30m',
-                    fontWeight: FontWeight.w500,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 16,
                   ),
                 ],
               ),

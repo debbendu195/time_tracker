@@ -169,25 +169,6 @@ class LeaveScreen extends StatelessWidget {
                     ],
                   ),
                   // Row 2
-                  TableRow(
-                    children: [
-                      const Padding(
-                        padding: EdgeInsets.all(8.0),
-                        child: Text('Emma'),
-                      ),
-                      const Padding(
-                        padding: EdgeInsets.all(8.0),
-                        child: Text('30'),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: ElevatedButton(
-                          onPressed: () {},
-                          child: const Text('View'),
-                        ),
-                      ),
-                    ],
-                  ),
                 ],
               ),
             ),

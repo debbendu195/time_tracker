@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:time/core/app_routes/app_routes.dart';
 import 'package:time/view/components/custom_button/custom_button.dart';
+import 'package:time/view/components/custom_image/custom_image.dart';
 import 'package:time/view/components/custom_text/custom_text.dart';
 import 'package:time/view/utils/app_colors/app_colors.dart';
+import 'package:time/view/utils/app_images/app_images.dart';
 
 import '../../components/custom_nav_bar/navbar.dart';
 
@@ -129,27 +131,38 @@ class UserScreen extends StatelessWidget {
             SizedBox(height: 10,),
             Card(
               child: Container(
-                height: 70,
+                height: 80,
                 width: double.infinity,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
                   color: AppColors.green
                 ),
                 child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 20,vertical: 12),
+                  padding: const EdgeInsets.all(11),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text('Phoenix Development'),
                       Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          CustomText(
-                              text: '8 hours'
-                          ),
-                          CustomText(
-                              text: 'Over Time 1 hour'
-                          )
+                          CustomImage(imageSrc: AppImages.home),
+                          SizedBox(width: 10,),
+                          Text('Phoenix Development'),
+                        ],
+                      ),
+                      SizedBox(height: 10,),
+                      Row(
+                        children: [
+                          CustomImage(imageSrc: AppImages.home),
+                          SizedBox(width: 10,),
+                          Text('8 hours'),
+                          Spacer(),
+                          CustomText(text: 'Over Time 1 hour')
+                          // CustomText(
+                          //     text: '8 hours'
+                          // ),
+                          // CustomText(
+                          //     text: 'Over Time 1 hour'
+                          // )
                         ],
                       )
                     ],
@@ -158,28 +171,39 @@ class UserScreen extends StatelessWidget {
               )
             ),
             SizedBox(height: 10,),
-          Card(
+            Card(
               child: Container(
-                height: 70,
+                height: 80,
                 width: double.infinity,
                 decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10),
+                  borderRadius: BorderRadius.circular(10),
                 ),
                 child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 20,vertical: 12),
+                  padding: const EdgeInsets.all(11),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text('Phoenix Development'),
                       Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          CustomText(
-                              text: '8 hours'
-                          ),
-                          CustomText(
-                              text: '8 hours'
-                          )
+                          CustomImage(imageSrc: AppImages.home),
+                          SizedBox(width: 10,),
+                          Text('Phoenix Development'),
+                        ],
+                      ),
+                      SizedBox(height: 10,),
+                      Row(
+                        children: [
+                          CustomImage(imageSrc: AppImages.home),
+                          SizedBox(width: 10,),
+                          Text('8 hours'),
+                          Spacer(),
+                          CustomText(text: 'Over Time 1 hour')
+                          // CustomText(
+                          //     text: '8 hours'
+                          // ),
+                          // CustomText(
+                          //     text: 'Over Time 1 hour'
+                          // )
                         ],
                       )
                     ],
@@ -188,28 +212,39 @@ class UserScreen extends StatelessWidget {
               )
             ),
             SizedBox(height: 10,),
-          Card(
+            Card(
               child: Container(
-                height: 70,
+                height: 80,
                 width: double.infinity,
                 decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10),
+                  borderRadius: BorderRadius.circular(10),
                 ),
                 child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 20,vertical: 12),
+                  padding: const EdgeInsets.all(11),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text('Phoenix Development'),
                       Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          CustomText(
-                              text: '8 hours'
-                          ),
-                          CustomText(
-                              text: '8 hours'
-                          )
+                          CustomImage(imageSrc: AppImages.home),
+                          SizedBox(width: 10,),
+                          Text('Phoenix Development'),
+                        ],
+                      ),
+                      SizedBox(height: 10,),
+                      Row(
+                        children: [
+                          CustomImage(imageSrc: AppImages.home),
+                          SizedBox(width: 10,),
+                          Text('8 hours'),
+                          Spacer(),
+                          CustomText(text: 'Over Time 1 hour')
+                          // CustomText(
+                          //     text: '8 hours'
+                          // ),
+                          // CustomText(
+                          //     text: 'Over Time 1 hour'
+                          // )
                         ],
                       )
                     ],
@@ -218,35 +253,7 @@ class UserScreen extends StatelessWidget {
               )
             ),
             SizedBox(height: 10,),
-          Card(
-              child: Container(
-                height: 70,
-                width: double.infinity,
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10),
-                ),
-                child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 20,vertical: 12),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text('Phoenix Development'),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          CustomText(
-                              text: '8 hours'
-                          ),
-                          CustomText(
-                              text: '8 hours'
-                          )
-                        ],
-                      )
-                    ],
-                  ),
-                ),
-              )
-            ),
+
           ],
         ),
       ),

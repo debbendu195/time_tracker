@@ -73,7 +73,7 @@ class CustomFormCard extends StatelessWidget {
           isPassword: isPassword,
           textEditingController: controller,
           inputTextStyle: GoogleFonts.inter(color: AppColors.black, fontSize: 18.sp),
-          fillColor: hasBackgroundColor ? AppColors.grey_02 : AppColors.grey_02,
+          fillColor: hasBackgroundColor ? AppColors.lightWhite : AppColors.lightWhite,
           fieldBorderColor: AppColors.titleText2Clr.withValues(alpha: .2),
           keyboardType: keyboardType ?? (isPassword ? TextInputType.visiblePassword : TextInputType.text),
           onTap: onTap,
