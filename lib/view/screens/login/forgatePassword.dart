@@ -62,7 +62,7 @@ class ForgatePassword extends StatelessWidget {
                     maxLines: 3,
                     bottom: 20,
                   ),
-                  CustomFormCard(title: 'Email', controller: TextEditingController()),
+                  CustomFormCard(title: 'Email', controller: TextEditingController(), hintText: 'Enter your email',),
                   SizedBox(height: 10,),
                   CustomButton(
                     onTap: (){

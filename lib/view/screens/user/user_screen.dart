@@ -39,7 +39,7 @@ class UserScreen extends StatelessWidget {
               ],
             ),
             const Spacer(),
-            const Icon(Icons.notifications, color: Colors.red),
+            const Icon(Icons.notifications, color: Colors.black),
           ],
         ),
       ),
@@ -53,7 +53,7 @@ class UserScreen extends StatelessWidget {
               children: [
                 CustomButton(
                   onTap: (){
-                    Get.toNamed(AppRoutes.projectDetailsScreen);
+                    Get.toNamed(AppRoutes.userScreen);
                   },
                   title: 'Today',
                   height: 40,
@@ -63,7 +63,9 @@ class UserScreen extends StatelessWidget {
                 ),
                 SizedBox(width: 10,),
                 CustomButton(
-                  onTap: (){},
+                  onTap: (){
+                    Get.toNamed(AppRoutes.projectDetailsScreen);
+                  },
                   title: 'Report',
                   height: 40,
                   width: 120,
@@ -146,7 +148,7 @@ class UserScreen extends StatelessWidget {
                         children: [
                           CustomImage(imageSrc: AppImages.home),
                           SizedBox(width: 10,),
-                          Text('Phoenix Development'),
+                          CustomText(text: 'Phoenix Development',color: AppColors.white, fontSize: 14,)
                         ],
                       ),
                       SizedBox(height: 10,),
@@ -154,9 +156,9 @@ class UserScreen extends StatelessWidget {
                         children: [
                           CustomImage(imageSrc: AppImages.home),
                           SizedBox(width: 10,),
-                          Text('8 hours'),
+                          CustomText(text: '8 hour',color: AppColors.white, fontSize: 14,),
                           Spacer(),
-                          CustomText(text: 'Over Time 1 hour')
+                          CustomText(text: 'Over Time 1 hour',color: AppColors.white, fontSize: 14,)
                           // CustomText(
                           //     text: '8 hours'
                           // ),

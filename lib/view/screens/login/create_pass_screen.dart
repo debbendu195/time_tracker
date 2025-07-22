@@ -25,8 +25,8 @@ class CreatePassScreen extends StatelessWidget {
           Center(
             child: CustomImage(
               imageSrc: AppImages.security,
-              width: 181,
-              height: 181,
+              width: 250,
+              height: 250,
             ),
           ),
         ],
@@ -56,19 +56,21 @@ class CreatePassScreen extends StatelessWidget {
                 Column(
                   children: [
                     CustomText(
-                      text: 'We’ve sent a verification link to your email address. Please check your inbox and click on the link to confirm your account and get started with alpha track ',
+                      text: 'Please choose a new password for your account. Make sure its secure and easy for you to remember. Your password must be at least 8 characters long, and include a mix of letters, numbers, and symbols.',
                       fontWeight: FontWeight.w400,
                       fontSize: 12,
                       maxLines: 3,
                       bottom: 40,
                     ),
                     CustomFormCard(
-                        title: 'New Password',
-                        controller: TextEditingController()
+                      title: 'New Password',
+                      controller: TextEditingController(),
+                      hintText: 'Password',
                     ),
                     CustomFormCard(
-                        title: 'Confirm New Password',
-                        controller: TextEditingController()
+                      title: 'Confirm New Password',
+                      controller: TextEditingController(),
+                      hintText: 'Confirm Password',
                     ),
                     CustomButton(
                       onTap: (){

@@ -25,14 +25,14 @@ class OtpScreen extends StatelessWidget {
           Center(
             child: CustomImage(
               imageSrc: AppImages.otp,
-              height: 297,
-              width: 311,
+              height: 350,
+              width: 400,
             ),
           ),
           SizedBox(height: 100,),
           Expanded(
             child: Container(
-              height: MediaQuery.sizeOf(context).height/3,
+              height: MediaQuery.sizeOf(context).height/2,
               width: 500,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(30),
@@ -54,10 +54,10 @@ class OtpScreen extends StatelessWidget {
                   children: [
                     CustomText(
                       top: 30,
-                      text: 'verify your account',
+                      text: 'Verify Your Account',
                       fontWeight: FontWeight.w500,
                       fontSize: 16,
-                      bottom: 40,
+                      bottom: 10,
                     ),
                     Column(
                       children: [
@@ -66,15 +66,19 @@ class OtpScreen extends StatelessWidget {
                           fontWeight: FontWeight.w400,
                           fontSize: 12,
                           maxLines: 3,
-                          bottom: 40,
+                          bottom: 20,
                         ),
                         CustomPinCode(controller: TextEditingController()),
-                        SizedBox(height: 50,),
+                        CustomText(
+                          text: 'Resent in 00:20',
+                          fontSize: 13,
+                        ),
+                        SizedBox(height: 20,),
                         CustomButton(
                           onTap: (){
                             Get.toNamed(AppRoutes.createPassScreen);
                           },
-                          title: 'Send OTP Code',
+                          title: 'Continue',
                           fillColor: AppColors.blue,
                           borderRadius: 30,
                         ),

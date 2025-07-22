@@ -23,8 +23,8 @@ class OnbordingscreenThree extends StatelessWidget {
             Center(
               child: CustomImage(
                 imageSrc: AppImages.track,
-                width: 282,
-                height: 270,
+                width: 400,
+                height: 400,
               ),
             ),
             CustomText(

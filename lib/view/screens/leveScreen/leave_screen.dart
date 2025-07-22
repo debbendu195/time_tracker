@@ -6,6 +6,7 @@ import 'package:time/view/components/custom_button/custom_button.dart';
 import 'package:time/view/components/custom_nav_bar/navbar.dart';
 import 'package:time/view/components/custom_royel_appbar/custom_royel_appbar.dart';
 import 'package:time/view/components/custom_text/custom_text.dart';
+import 'package:time/view/utils/app_colors/app_colors.dart';
 
 class LeaveScreen extends StatelessWidget {
   LeaveScreen({super.key});
@@ -111,6 +112,8 @@ class LeaveScreen extends StatelessWidget {
               child: CustomButton(
                 height: 60,
                 width: 150,
+                fillColor: AppColors.blue,
+                borderRadius: 30,
                 onTap: () {
                   Get.toNamed(AppRoutes.leaveNextScreen);
                 },
@@ -161,7 +164,7 @@ class LeaveScreen extends StatelessWidget {
                       ),
                       Padding(
                         padding: const EdgeInsets.all(8.0),
-                        child: ElevatedButton(
+                        child: TextButton(
                           onPressed: () {},
                           child: const Text('View'),
                         ),

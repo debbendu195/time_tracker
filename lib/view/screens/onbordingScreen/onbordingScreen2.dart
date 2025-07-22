@@ -23,28 +23,26 @@ class OnbordingscreenTwo extends StatelessWidget {
             Center(
               child: CustomImage(
                 imageSrc: AppImages.target,
-                width: 287,
-                height: 257,
+                width: 400,
+                height: 400,
               ),
             ),
             CustomText(
-              top: 20,
-              text: 'Track your time effortlessly',
+              text: 'Track Your Time Effortlessly',
               fontSize: 24,
               fontWeight: FontWeight.w500,
               color: AppColors.black,
               maxLines: 5,
-              bottom: 20,
+              bottom: 10,
             ),
             CustomText(
-                top: 20,
                 text:
                 "Easily start and stop timers for your tasks with a single tap. No more manual entries or confusion—just track your time with precision",
                 fontSize: 12,
                 fontWeight: FontWeight.w400,
                 color: AppColors.black,
                 maxLines: 5,
-                bottom: 50
+                bottom: 30
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,

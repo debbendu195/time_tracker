@@ -19,7 +19,7 @@ class ProjectDetailsScreen extends StatelessWidget {
         title: Row(
           children: [
             const CircleAvatar(
-              backgroundImage: AssetImage('assets/images/img.png'), // Replace with your image
+              backgroundImage: AssetImage('assets/images/img.png'),
               radius: 20,
             ),
             const SizedBox(width: 8),
@@ -39,7 +39,8 @@ class ProjectDetailsScreen extends StatelessWidget {
               ],
             ),
             const Spacer(),
-            const Icon(Icons.notifications, color: Colors.red),
+            const Icon(Icons.notifications, color: Colors.black
+            ),
           ],
         ),
       ),
@@ -52,7 +53,9 @@ class ProjectDetailsScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 CustomButton(
-                  onTap: (){},
+                  onTap: (){
+                    Get.toNamed(AppRoutes.userScreen);
+                  },
                   title: 'Today',
                   height: 40,
                   width: 120,

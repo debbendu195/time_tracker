@@ -23,18 +23,16 @@ class OnbordingscreenOne extends StatelessWidget {
             Center(
               child: CustomImage(
                 imageSrc: AppImages.timer,
-                width: 287,
-                height: 257,
+                width: 500,
+                height: 500,
               ),
             ),
             CustomText(
-              top: 20,
               text: 'Let’s Track Your First Task',
               fontSize: 24,
               fontWeight: FontWeight.w500,
               color: AppColors.black,
               maxLines: 5,
-              bottom: 20,
             ),
             CustomText(
               // top: 20,
